@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Porsche India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #e4002a;
+      --black: #111;
+      --white: #ffffff;
+      --gray: #f5f5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--white);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--red);
+      color: var(--white);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: bold;
+      background: var(--white);
+      color: var(--red);
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      color: var(--red);
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #333;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--gray);
+      border-radius: 12px;
+      width: 300px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      color: var(--red);
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .cta {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .cta p {
+      color: #ccc;
+    }
+
+    footer {
+      background: var(--red);
+      color: var(--white);
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .btn {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+      }
+
+      section h2 {
+        font-size: 2rem;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <img src="https://1000logos.net/wp-content/uploads/2018/02/Porsche-logo.png" alt="Porsche Logo">
+    <h1>Porsche India</h1>
+    <p>Luxury. Speed. Precision. Experience the thrill of design and engineering fused into one.</p>
+    <a href="#models" class="btn">Explore Models ↓</a>
+  </header>
+
+  <!-- Models -->
+  <section id="models">
+    <h2>Featured Models</h2>
+    <p>Discover our top-tier machines that combine elite performance with timeless design.</p>
+    <div class="cards">
+
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="https://i.ytimg.com/vi/qnsb7AjWFq8/maxresdefault.jpg" alt="911 GT3 RS">
+        <div class="card-content">
+          <h3>911 GT3 RS</h3>
+          <p>Track-tested, road-proven. A true icon redefined for the purist driver.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="https://www.carscoops.com/wp-content/uploads/2022/12/Porsche-Taycan-2-400x225.jpg" alt="Taycan Turbo S">
+        <div class="card-content">
+          <h3>Taycan Turbo S</h3>
+          <p>Electric without compromise. Power, agility, and silence — reimagined.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="https://di-uploads-pod46.dealerinspire.com/raycatenaporsche1/uploads/2023/02/2023_Macan_GTS_front-1024x576.jpeg" alt="Macan GTS">
+        <div class="card-content">
+          <h3>Macan GTS</h3>
+          <p>Everyday practicality. Unmatched agility. The sports car of SUVs.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Feel the Redline</h2>
+    <p>Your next chapter starts here. Claim your Porsche today and own the road.</p>
+    <a href="mailto:dharankoratala@gmail.com" class="btn">Get In Touch →</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Porsche India · Designed with Speed & Style
+  </footer>
+
+</body>
+</html>
